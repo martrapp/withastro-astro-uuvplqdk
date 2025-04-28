@@ -1,0 +1,18 @@
+---
+
+
+import Layout from "../layouts/Layout.astro";
+
+const title = "CS 354 - Running XINU on UTM";
+
+// Load Markdown content page
+import { Content } from "../content/content.md";
+---
+
+<Layout title={title}>
+    <div class="container">
+        <h1 transition:name="purdue-cs354-utm">{title}</h1>
+
+        <Content />
+    </div>
+</Layout>
